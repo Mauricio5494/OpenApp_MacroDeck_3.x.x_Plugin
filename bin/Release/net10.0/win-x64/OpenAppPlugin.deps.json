@@ -1,0 +1,194 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0/win-x64",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {},
+    ".NETCoreApp,Version=v10.0/win-x64": {
+      "OpenAppPlugin/1.0.0": {
+        "dependencies": {
+          "MacroDeck.Localization": "3.0.0-preview.4",
+          "MacroDeck.Plugin.Hosting": "3.0.0-preview.4",
+          "MacroDeck.Plugin.Serilog": "3.0.0-preview.4",
+          "MacroDeck.Sdk": "3.0.0-preview.4",
+          "Serilog": "4.3.0"
+        },
+        "runtime": {
+          "OpenAppPlugin.dll": {}
+        }
+      },
+      "MacroDeck.Localization/3.0.0-preview.4": {
+        "runtime": {
+          "lib/net10.0/MacroDeck.Localization.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.0.0"
+          }
+        }
+      },
+      "MacroDeck.Plugin.Hosting/3.0.0-preview.4": {
+        "dependencies": {
+          "MacroDeck.Localization": "3.0.0-preview.4",
+          "MacroDeck.Plugin.Protocol": "3.0.0-preview.4",
+          "MacroDeck.Sdk": "3.0.0-preview.4",
+          "Serilog": "4.3.0"
+        },
+        "runtime": {
+          "lib/net10.0/MacroDeck.Plugin.Hosting.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.0.0"
+          }
+        }
+      },
+      "MacroDeck.Plugin.Protocol/3.0.0-preview.4": {
+        "dependencies": {
+          "MacroDeck.Sdk": "3.0.0-preview.4",
+          "Serilog": "4.3.0"
+        },
+        "runtime": {
+          "lib/net10.0/MacroDeck.Plugin.Protocol.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.0.0"
+          }
+        }
+      },
+      "MacroDeck.Plugin.Serilog/3.0.0-preview.4": {
+        "dependencies": {
+          "MacroDeck.Plugin.Hosting": "3.0.0-preview.4",
+          "MacroDeck.Plugin.Protocol": "3.0.0-preview.4",
+          "Serilog": "4.3.0",
+          "Serilog.Extensions.Hosting": "10.0.0"
+        },
+        "runtime": {
+          "lib/net10.0/MacroDeck.Plugin.Serilog.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.0.0"
+          }
+        }
+      },
+      "MacroDeck.Sdk/3.0.0-preview.4": {
+        "dependencies": {
+          "MacroDeck.Localization": "3.0.0-preview.4",
+          "MacroDeck.Ui.Model": "3.0.0-preview.4",
+          "Serilog": "4.3.0"
+        },
+        "runtime": {
+          "lib/net10.0/MacroDeck.Sdk.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.0.0"
+          }
+        }
+      },
+      "MacroDeck.Ui.Model/3.0.0-preview.4": {
+        "runtime": {
+          "lib/net10.0/MacroDeck.Ui.Model.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.0.0"
+          }
+        }
+      },
+      "Serilog/4.3.0": {
+        "runtime": {
+          "lib/net9.0/Serilog.dll": {
+            "assemblyVersion": "4.3.0.0",
+            "fileVersion": "4.3.0.0"
+          }
+        }
+      },
+      "Serilog.Extensions.Hosting/10.0.0": {
+        "dependencies": {
+          "Serilog": "4.3.0",
+          "Serilog.Extensions.Logging": "10.0.0"
+        },
+        "runtime": {
+          "lib/net10.0/Serilog.Extensions.Hosting.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.0.0"
+          }
+        }
+      },
+      "Serilog.Extensions.Logging/10.0.0": {
+        "dependencies": {
+          "Serilog": "4.3.0"
+        },
+        "runtime": {
+          "lib/net10.0/Serilog.Extensions.Logging.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "OpenAppPlugin/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MacroDeck.Localization/3.0.0-preview.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-vl5vRFct/bfVuH6doFpUvZ4bOq317IywFltsyP1F8WwjimxSkSrLBuLtDnqikLV6GmE3OKRMSK35xlaJgMQBhw==",
+      "path": "macrodeck.localization/3.0.0-preview.4",
+      "hashPath": "macrodeck.localization.3.0.0-preview.4.nupkg.sha512"
+    },
+    "MacroDeck.Plugin.Hosting/3.0.0-preview.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-sLlQFtzZeCa1JK1cImMI5SmceEh4oJRbN1H4Eh7vKKiyohD7prw/nRX7mqhw/34IkbVeRurJsvfcA+y0xEtr6Q==",
+      "path": "macrodeck.plugin.hosting/3.0.0-preview.4",
+      "hashPath": "macrodeck.plugin.hosting.3.0.0-preview.4.nupkg.sha512"
+    },
+    "MacroDeck.Plugin.Protocol/3.0.0-preview.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-G9D5IlfFzvYWAOZ4gG0/yzMYkDsCStQORaMGOjEVxT6vxIHupTI4P6Jnz+/Kvd56bkxYf5vF/UylG+KYXAXggw==",
+      "path": "macrodeck.plugin.protocol/3.0.0-preview.4",
+      "hashPath": "macrodeck.plugin.protocol.3.0.0-preview.4.nupkg.sha512"
+    },
+    "MacroDeck.Plugin.Serilog/3.0.0-preview.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-92fhPCeTT3GM5sg7kGknmg9wTGgC9Aa/QhjLtbyVFyzgFLX67PfrD91nMYOd+tlsHPBjO31Ycz2LBui4bHFK5g==",
+      "path": "macrodeck.plugin.serilog/3.0.0-preview.4",
+      "hashPath": "macrodeck.plugin.serilog.3.0.0-preview.4.nupkg.sha512"
+    },
+    "MacroDeck.Sdk/3.0.0-preview.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-diYU7ylyhVyo2vHUC75B12kxuDki9d4eMzdLE0Im/oIS/+l7nbUszVc49+fK2RsDaLFZaMoRdhnCbOL/kLVhSg==",
+      "path": "macrodeck.sdk/3.0.0-preview.4",
+      "hashPath": "macrodeck.sdk.3.0.0-preview.4.nupkg.sha512"
+    },
+    "MacroDeck.Ui.Model/3.0.0-preview.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-2fWKgGkXhn9mGc3zsjrLRqEXtr8SYbMXDTwNyd1Mhs/bR6GeU8wG7AVXicGLh8C7aG/RGkRQhaNitRlxOf8plg==",
+      "path": "macrodeck.ui.model/3.0.0-preview.4",
+      "hashPath": "macrodeck.ui.model.3.0.0-preview.4.nupkg.sha512"
+    },
+    "Serilog/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+cDryFR0GRhsGOnZSKwaDzRRl4MupvJ42FhCE4zhQRVanX0Jpg6WuCBk59OVhVDPmab1bB+nRykAnykYELA9qQ==",
+      "path": "serilog/4.3.0",
+      "hashPath": "serilog.4.3.0.nupkg.sha512"
+    },
+    "Serilog.Extensions.Hosting/10.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-E7juuIc+gzoGxgzFooFgAV8g9BfiSXNKsUok9NmEpyAXg2odkcPsMa/Yo4axkJRlh0se7mkYQ1GXDaBemR+b6w==",
+      "path": "serilog.extensions.hosting/10.0.0",
+      "hashPath": "serilog.extensions.hosting.10.0.0.nupkg.sha512"
+    },
+    "Serilog.Extensions.Logging/10.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-vx0kABKl2dWbBhhqAfTOk53/i8aV/5VaT3a6il9gn72Wqs2pM7EK2OB6No6xdqK2IaY6Zf9gdjLuK9BVa2rT+Q==",
+      "path": "serilog.extensions.logging/10.0.0",
+      "hashPath": "serilog.extensions.logging.10.0.0.nupkg.sha512"
+    }
+  }
+}

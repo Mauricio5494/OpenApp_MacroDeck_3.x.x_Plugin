@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "dgSpecHash": "jJft3R0TcD4=",
+  "success": true,
+  "projectFilePath": "Z:\\Macro Deck proyect scritps\\OpenAppPlugin\\OpenAppPlugin.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Sparky\\.nuget\\packages\\macrodeck.localization\\3.0.0-preview.4\\macrodeck.localization.3.0.0-preview.4.nupkg.sha512",
+    "C:\\Users\\Sparky\\.nuget\\packages\\macrodeck.plugin.analyzers\\3.0.0-preview.4\\macrodeck.plugin.analyzers.3.0.0-preview.4.nupkg.sha512",
+    "C:\\Users\\Sparky\\.nuget\\packages\\macrodeck.plugin.hosting\\3.0.0-preview.4\\macrodeck.plugin.hosting.3.0.0-preview.4.nupkg.sha512",
+    "C:\\Users\\Sparky\\.nuget\\packages\\macrodeck.plugin.protocol\\3.0.0-preview.4\\macrodeck.plugin.protocol.3.0.0-preview.4.nupkg.sha512",
+    "C:\\Users\\Sparky\\.nuget\\packages\\macrodeck.plugin.serilog\\3.0.0-preview.4\\macrodeck.plugin.serilog.3.0.0-preview.4.nupkg.sha512",
+    "C:\\Users\\Sparky\\.nuget\\packages\\macrodeck.sdk\\3.0.0-preview.4\\macrodeck.sdk.3.0.0-preview.4.nupkg.sha512",
+    "C:\\Users\\Sparky\\.nuget\\packages\\macrodeck.ui.model\\3.0.0-preview.4\\macrodeck.ui.model.3.0.0-preview.4.nupkg.sha512",
+    "C:\\Users\\Sparky\\.nuget\\packages\\serilog\\4.3.0\\serilog.4.3.0.nupkg.sha512",
+    "C:\\Users\\Sparky\\.nuget\\packages\\serilog.extensions.hosting\\10.0.0\\serilog.extensions.hosting.10.0.0.nupkg.sha512",
+    "C:\\Users\\Sparky\\.nuget\\packages\\serilog.extensions.logging\\10.0.0\\serilog.extensions.logging.10.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

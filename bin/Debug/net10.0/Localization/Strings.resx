@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="Actions.OpenApp.Name" xml:space="preserve">
+    <value>Abrir Aplicación</value>
+  </data>
+  <data name="Actions.OpenApp.Description" xml:space="preserve">
+    <value>Abre una aplicación local seleccionando la ruta de su ejecutable.</value>
+  </data>
+  <data name="Actions.OpenApp.AppPathLabel" xml:space="preserve">
+    <value>Ruta del ejecutable</value>
+  </data>
+  <data name="Errors.AppPathRequired" xml:space="preserve">
+    <value>Debes especificar la ruta del ejecutable de la aplicación.</value>
+  </data>
+  <data name="Errors.CouldNotOpenApp" xml:space="preserve">
+    <value>No se pudo abrir la aplicación: {appPath}</value>
+    <comment>[appPath:string] Ruta del ejecutable que no se pudo abrir.</comment>
+  </data>
+</root>

@@ -1,0 +1,39 @@
+{
+  "$schema": "https://schemas.macro-deck.app/plugin-manifest-v1.schema.json",
+  "manifestVersion": 1,
+  "id": "com.macrodeck.openapp",
+  "name": "Open App",
+  "version": "1.0.0",
+  "description": "Abre una aplicación local seleccionando su ruta ejecutable.",
+  "icon": "Assets/icon.svg",
+  "entrypoints": {
+    "linux-x64": {
+      "executable": "runtimes/linux-x64/OpenAppPlugin.dll",
+      "runtime": {
+        "kind": "FrameworkDependent",
+        "dotnetVersion": "10.0"
+      }
+    },
+    "win-x64": {
+      "executable": "runtimes/win-x64/OpenAppPlugin.dll",
+      "runtime": {
+        "kind": "FrameworkDependent",
+        "dotnetVersion": "10.0"
+      }
+    },
+    "osx-arm64": {
+      "executable": "runtimes/osx-arm64/OpenAppPlugin.dll",
+      "runtime": {
+        "kind": "FrameworkDependent",
+        "dotnetVersion": "10.0"
+      }
+    }
+  },
+  "publisher": {
+    "name": "sparky"
+  },
+  "license": "MIT",
+  "compatibility": {
+    "macroDeck": ">=3.0.0-0"
+  }
+}

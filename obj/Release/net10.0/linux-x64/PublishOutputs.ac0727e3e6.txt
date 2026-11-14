@@ -1,0 +1,16 @@
+/home/sparky/Documentos/Macro Deck proyect scripts/Macro Deck proyect scritps/OpenAppPlugin/bin/publish/linux-x64/manifest.json
+/home/sparky/Documentos/Macro Deck proyect scripts/Macro Deck proyect scritps/OpenAppPlugin/bin/publish/linux-x64/Assets/icon.svg
+/home/sparky/Documentos/Macro Deck proyect scripts/Macro Deck proyect scritps/OpenAppPlugin/bin/publish/linux-x64/Localization/Strings.resx
+/home/sparky/Documentos/Macro Deck proyect scripts/Macro Deck proyect scritps/OpenAppPlugin/bin/publish/linux-x64/OpenAppPlugin.dll
+/home/sparky/Documentos/Macro Deck proyect scripts/Macro Deck proyect scritps/OpenAppPlugin/bin/publish/linux-x64/OpenAppPlugin.runtimeconfig.json
+/home/sparky/Documentos/Macro Deck proyect scripts/Macro Deck proyect scritps/OpenAppPlugin/bin/publish/linux-x64/OpenAppPlugin.pdb
+/home/sparky/Documentos/Macro Deck proyect scripts/Macro Deck proyect scritps/OpenAppPlugin/bin/publish/linux-x64/MacroDeck.Localization.dll
+/home/sparky/Documentos/Macro Deck proyect scripts/Macro Deck proyect scritps/OpenAppPlugin/bin/publish/linux-x64/MacroDeck.Plugin.Hosting.dll
+/home/sparky/Documentos/Macro Deck proyect scripts/Macro Deck proyect scritps/OpenAppPlugin/bin/publish/linux-x64/MacroDeck.Plugin.Protocol.dll
+/home/sparky/Documentos/Macro Deck proyect scripts/Macro Deck proyect scritps/OpenAppPlugin/bin/publish/linux-x64/MacroDeck.Plugin.Serilog.dll
+/home/sparky/Documentos/Macro Deck proyect scripts/Macro Deck proyect scritps/OpenAppPlugin/bin/publish/linux-x64/MacroDeck.Sdk.dll
+/home/sparky/Documentos/Macro Deck proyect scripts/Macro Deck proyect scritps/OpenAppPlugin/bin/publish/linux-x64/MacroDeck.Ui.Model.dll
+/home/sparky/Documentos/Macro Deck proyect scripts/Macro Deck proyect scritps/OpenAppPlugin/bin/publish/linux-x64/Serilog.dll
+/home/sparky/Documentos/Macro Deck proyect scripts/Macro Deck proyect scritps/OpenAppPlugin/bin/publish/linux-x64/Serilog.Extensions.Hosting.dll
+/home/sparky/Documentos/Macro Deck proyect scripts/Macro Deck proyect scritps/OpenAppPlugin/bin/publish/linux-x64/Serilog.Extensions.Logging.dll
+/home/sparky/Documentos/Macro Deck proyect scripts/Macro Deck proyect scritps/OpenAppPlugin/bin/publish/linux-x64/OpenAppPlugin.deps.json
