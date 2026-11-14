@@ -34,7 +34,7 @@ The plugin is distributed as a **`.macroDeckPlugin`** package file:
 com.macrodeck.openapp-1.0.0.macroDeckPlugin
 ```
 
-This file is located in the `artifacts/` folder of the project.
+This file is located in the **Releases**, go and download it.
 
 ### Installing in Macro Deck 3
 
