@@ -1,60 +1,60 @@
 # Open App Plugin for Macro Deck 3
 
-Un plugin de Macro Deck 3 que abre una aplicación o archivo local desde un botón. Eliges la ruta del ejecutable (o cualquier archivo) y Macro Deck lo lanza con el gestor predeterminado del sistema.
+A Macro Deck 3 plugin that opens a local application or file from a button. You select the executable path (or any file) and Macro Deck launches it using the default application handler.
 
-Solo funciona con **Macro Deck 3**. No es compatible con Macro Deck 2.x.
+**Important:** This plugin is for **Macro Deck 3 only**. It is **not** compatible with Macro Deck 2.x.
 
-Un pulsador abre una aplicación o archivo:
+A button press opens a single application or file:
 
-- `.exe` — lanzado directamente en Windows
-- `.txt`, `.pdf` y otros archivos — abiertos con la aplicación asociada por defecto
-- La ruta del ejecutable se configura por instancia de botón
-- Funciona en Windows, Linux y macOS
+- `.exe files` — launched directly on Windows
+- `.txt`, `.pdf`, and other files — opened with the default associated application
+- Configure the executable path per button instance
+- Works on Windows, Linux, and macOS
 
-## Características
+## Features
 
-- Abre cualquier aplicación local por su ruta de ejecutable
-- Abre documentos con la aplicación asociada por defecto
-- Un solo parámetro de texto para la ruta del ejecutable o archivo
-- Puntos de entrada multiplataforma: Windows (win-x64), Linux (linux-x64), macOS (osx-arm64)
-- Dependiente del framework: artefacto pequeño (~0,7 MB por plataforma); Macro Deck 3 provee el runtime de .NET 10
+- Open any local application by its executable path
+- Open documents with the default associated application
+- Simple text parameter for the executable/file path
+- Cross-platform entrypoints: Windows (win-x64), Linux (linux-x64), macOS (osx-arm64)
+- Framework-dependent: small artifact size (~0.7 MB per platform), Macro Deck 3 provides the .NET 10 runtime
 
-## Requisitos
+## Requirements
 
-- Macro Deck 3.0.0 o superior
-- Windows 10/11, Linux o macOS
+- Macro Deck 3.0.0 or later
+- Windows 10/11, Linux, or macOS
 
-## Instalación
+## Installation
 
-El plugin se distribuye como un paquete `.macroDeckPlugin`:
+The plugin is distributed as a `.macroDeckPlugin` package file:
 
 ```
 com.macrodeck.openapp-1.0.0.macroDeckPlugin
 ```
 
-Está en la sección **Releases**. Descárgalo desde ahí.
+This file is located in the **Releases**. Download it from there.
 
-### Instalar en Macro Deck 3
+### Installing in Macro Deck 3
 
-Macro Deck 3 tiene una sección integrada de **Plugins** para añadir plugins de terceros:
+Macro Deck 3 includes a built-in **Plugins** section where third-party plugins can be added:
 
-1. Abre Macro Deck 3.
-2. Ve a la sección **Plugins** (o Extensiones, según tu compilación).
-3. Busca la opción para instalar o añadir un plugin desde un archivo local (por ejemplo, un botón que diga "Install plugin" o "Add plugin").
-4. Selecciona el archivo `.macroDeckPlugin`:
+1. Open Macro Deck 3.
+2. Go to the **Plugins** section (or Extensions, depending on your build).
+3. Look for an option to install or add a plugin from a local file.
+4. Select the `.macroDeckPlugin` file:
 
    ```
    com.macrodeck.openapp-1.0.0.macroDeckPlugin
    ```
 
-5. Sigue los indicadores de pantalla para terminar la instalación.
-6. Reinicia Macro Deck 3 si te lo pide.
+5. Follow the on-screen prompts to complete the installation.
+6. Restart Macro Deck 3 if prompted.
 
-La documentación oficial de Macro Deck no publica una guía paso a paso de la interfaz para instalar archivos `.macroDeckPlugin` locales. Si no ves la opción en tu compilación, consulta la ayuda de la aplicación o los recursos de la comunidad de Macro Deck para saber dónde está el menú exacto en tu versión.
+The official Macro Deck documentation does not publish a step-by-step UI guide for installing local `.macroDeckPlugin` files. If the option is not visible in your build, consult the in-app help or the Macro Deck community resources for the exact menu location in your version.
 
-### Qué contiene el archivo `.macroDeckPlugin`
+### What is inside the `.macroDeckPlugin` file?
 
-Es un archivo ZIP con todo lo que el plugin necesita:
+It is a ZIP archive containing everything the plugin needs:
 
 ```
 com.macrodeck.openapp-1.0.0.macroDeckPlugin
@@ -72,40 +72,40 @@ com.macrodeck.openapp-1.0.0.macroDeckPlugin
     └── icon.svg
 ```
 
-Como es dependiente del framework, Macro Deck 3 suministra el runtime de .NET 10, así que el artefacto solo trae los ensamblados del plugin — nada de bundles grandes del runtime.
+Because it is framework-dependent, Macro Deck 3 supplies the .NET 10 runtime, so the artifact only contains the plugin's own assemblies — no large runtime bundles.
 
-## Uso
+## Usage
 
-1. Entra en **Modo Edición** en Macro Deck 3.
-2. Añade un botón nuevo o edita uno existente.
-3. En el selector de acciones, elige **"Open App"** (Abrir Aplicación).
-4. Configura la acción:
-   - **Ruta del ejecutable**: pon la ruta completa al `.exe` o archivo que quieras abrir (por ejemplo, `C:\Windows\notepad.exe` en Windows, `/usr/bin/firefox` en Linux, `/Applications/Safari.app` en macOS).
-5. Guarda el botón y sal del Modo Edición.
-6. Pulsa el botón — se abrirá la aplicación o el archivo.
+1. Enter **Edit Mode** in Macro Deck 3.
+2. Add a new button or edit an existing one.
+3. In the action selector, choose **"Open App"**.
+4. Configure the action:
+   - **Executable path**: Enter the full path to the `.exe` or file you want to open (e.g. `C:\Windows\notepad.exe` on Windows, `/usr/bin/firefox` on Linux, `/Applications/Safari.app` on macOS).
+5. Save the button and exit Edit Mode.
+6. Press the button — the application or file will open.
 
-## Desarrollo
+## Development
 
-El código fuente del plugin está aquí:
+The plugin source code is located at:
 
 ```
 /home/sparky/Documentos/Macro Deck proyect scripts/Macro Deck proyect scritps/OpenAppPlugin/
 ```
 
-### Estructura del proyecto
+### Project structure
 
-| Archivo | Para qué sirve |
-|---------|----------------|
-| `manifest.json` | Identidad del plugin, versión, puntos de entrada por plataforma |
-| `Program.cs` | Punto de entrada; registra la integración e inicia el host del plugin |
-| `PluginIntegration.cs` | Declara la acción `Open App` |
-| `OpenAppAction.cs` | Definición y ejecutor de la acción (abre la ruta del ejecutable) |
-| `Localization/Strings.resx` | Cadenas localizadas (español por defecto) |
-| `Assets/icon.svg` | Icono del plugin |
-| `macrodeck-build.json` | Instrucciones de compilación por plataforma |
-| `OpenAppPlugin.csproj` | Proyecto .NET 10, dependiente del framework, ASP.NET Core |
+| File | Purpose |
+|------|---------|
+| `manifest.json` | Plugin identity, version, entrypoints per platform |
+| `Program.cs` | Entry point; registers the integration and starts the plugin host |
+| `PluginIntegration.cs` | Declares the `Open App` action |
+| `OpenAppAction.cs` | Action definition and executor (opens the executable path) |
+| `Localization/Strings.resx` | Localized strings (Spanish by default) |
+| `Assets/icon.svg` | Plugin icon |
+| `macrodeck-build.json` | Build instructions per platform |
+| `OpenAppPlugin.csproj` | .NET 10 project, framework-dependent, ASP.NET Core |
 
-### Compilar
+### Building
 
 ```bash
 dotnet tool install --global MacroDeck.Plugin.Cli --prerelease
@@ -113,29 +113,29 @@ dotnet tool install --global MacroDeck.Plugin.Cli --prerelease
 macrodeck-plugin build --output ../../artifacts
 ```
 
-Esto genera `com.macrodeck.openapp-1.0.0.macroDeckPlugin` en la carpeta `artifacts`.
+This produces `com.macrodeck.openapp-1.0.0.macroDeckPlugin` in the `artifacts` folder.
 
-### Validar
+### Validating
 
 ```bash
 macrodeck-plugin validate --artifact artifacts/com.macrodeck.openapp-1.0.0.macroDeckPlugin
 ```
 
-## Compatibilidad
+## Compatibility
 
-| Plataforma | Soportada |
-|------------|-----------|
-| Windows | Sí |
-| Linux | Sí |
-| macOS | Sí |
-| Macro Deck 3 | Sí |
+| Platform | Supported |
+|----------|-----------|
+| Windows | Yes |
+| Linux | Yes |
+| macOS | Yes |
+| Macro Deck 3 | Yes |
 | Macro Deck 2.x | No |
 
-## Licencia
+## License
 
 MIT License
 
-## Fuentes
+## Sources
 
 - [Macro Deck Docs](https://docs.macro-deck.app/)
 - [Macro Deck User Guide](https://docs.macro-deck.app/guide/)
